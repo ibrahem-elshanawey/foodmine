@@ -1,0 +1,26 @@
+.container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffffea;
+    z-index: 1000;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    flex-direction: column;
+}
+img {
+    border-bottom: 10px solid brown;
+    width: 200px;
+    height: 200px;
+}
+h1 {
+    color: brown;
+}

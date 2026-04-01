@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="content">
+        <app-title title="Order Form" fontSize="1.6rem"></app-title>
+        <form [formGroup]="checkoutForm">
+            <text-input [control]="fc['name']" label="name"></text-input>
+            <text-input [control]="fc['address']" label="address"></text-input>
+            <order-items-list [order]="order"></order-items-list>
+        </form>
+    </div>
+    <div class="map">
+        <app-title title="Choose Your Address On Map" fontSize="1.6rem"></app-title>
+<map [order]="order"></map>
+    </div>
+    <div class="buttons-container">
+        <div class="buttons">
+            <button (click)="createOrder()">
+                Go To Payment
+            </button>
+        </div>
+    </div>
+</div>
